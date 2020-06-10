@@ -1,10 +1,10 @@
 package com.profinch.fincluez.finclueztlibrary.service;
 
 
-import com.profinch.fincluez.finclueztlibrary.entities.infraEntities.queryStore.DriverQueryStore;
-import com.profinch.fincluez.finclueztlibrary.entities.infraEntities.queryStore.QueryStore;
-import com.profinch.fincluez.finclueztlibrary.repo.infraRepo.queryStore.DriverQueryStoreRepo;
-import com.profinch.fincluez.finclueztlibrary.repo.infraRepo.queryStore.QueryStoreRepo;
+import com.profinch.fincluez.finclueztlibrary.entities.infraEntities.DriverQueryStore;
+import com.profinch.fincluez.finclueztlibrary.entities.infraEntities.QueryStore;
+import com.profinch.fincluez.finclueztlibrary.repo.infraRepo.DriverQueryStoreRepo;
+import com.profinch.fincluez.finclueztlibrary.repo.infraRepo.QueryStoreRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CacheEvict;
