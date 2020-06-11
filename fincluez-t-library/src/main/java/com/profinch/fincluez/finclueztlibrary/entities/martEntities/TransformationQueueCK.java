@@ -3,14 +3,17 @@ package com.profinch.fincluez.finclueztlibrary.entities.martEntities;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 
 public class TransformationQueueCK implements Serializable {
 
     private String entityCode;
     private String branchCode;
     private String referenceNumber;
+    @Temporal(TemporalType.DATE)
     private Date elRunDate;
     private String module;
 

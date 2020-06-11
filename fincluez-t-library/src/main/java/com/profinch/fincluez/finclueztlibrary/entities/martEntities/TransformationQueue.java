@@ -23,6 +23,7 @@ public class TransformationQueue implements Serializable {
     @Id
     private String referenceNumber;
     @Id
+    @Temporal(TemporalType.DATE)
     private Date elRunDate;
     @Id
     private String module;

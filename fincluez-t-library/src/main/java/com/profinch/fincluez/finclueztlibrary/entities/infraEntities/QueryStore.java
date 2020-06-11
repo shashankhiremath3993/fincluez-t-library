@@ -16,15 +16,9 @@ import java.io.Serializable;
 public class QueryStore implements Serializable {
     @Id
     private String idQuery = null;
-    private String databaseType = null;
     private String queryDescription = null;
     private String queryString = null;
-    private String queryType = null;
-    private Integer nbrParams = 0;
-    private String responseBean = null;
-    private Boolean isEnabled = true;
-    private Integer batchSize = 0;
-    private Boolean isCompressionRequired = false;
+    private Boolean enabled = true;
 
     @Override
     public String toString() {
