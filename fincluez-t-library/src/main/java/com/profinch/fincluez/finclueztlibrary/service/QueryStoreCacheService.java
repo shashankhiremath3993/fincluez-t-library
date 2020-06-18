@@ -38,6 +38,16 @@ public class QueryStoreCacheService {
         return null;
     }
 
+    @Cacheable(value = "driverQueryStore", key="#idQuery")
+    public DriverQueryStore getDriverQueryStoreByIdQuery(String idQuery){
+
+        Optional<DriverQueryStore> driverQueryStoreOptional = driverQueryStoreRepo.findById(idQuery);
+        if (driverQueryStoreOptional.isPresent()){
+            return driverQueryStoreOptional.get();
+        }
+        return null;
+    }
+
     @CacheEvict(value = "queryStore", allEntries = true)
     public List<String> evictAllQueryStoreCache(){
         List<String> stringList = new ArrayList<>();

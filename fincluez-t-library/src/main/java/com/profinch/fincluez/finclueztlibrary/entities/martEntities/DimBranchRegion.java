@@ -20,8 +20,8 @@ public class DimBranchRegion implements Serializable {
     private String entityCode;
     @Id
     private String branchRegionKey;
-    private String businessValue;
-    private String colorCode;
+    private String branchRegion;
+    private String colorBranchRegion;
 
 
     @Override
